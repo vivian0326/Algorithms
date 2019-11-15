@@ -36,6 +36,8 @@ int main(){
     MinHeap arr;
 
     arr.Input();
+
+    cout << "Sorted array : ";
     for(int i = 0;i < arr.n;i++){
         cout << arr.ExtractMin() << " ";
     }
@@ -50,10 +52,12 @@ MinHeap::MinHeap(){
 }
 
 void MinHeap::Input(){
+    cout << "Array length : ";
     cin >> n;
     len = n;
     arr = new int [n];
 
+    cout << "Elements : ";
     for(int i = 0;i < n;i++){
         cin >> arr[i];
     }
